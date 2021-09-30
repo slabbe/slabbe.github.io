@@ -1249,6 +1249,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     height: 530px;
     display: flex;
     align-items: center;
+    margin-bottom: 90px;
 }
 .hero-content h1{
     font-size: 52px;
