@@ -580,3 +580,25 @@ VenoBox Js
 		});
 	}
 })(jQuery);
+
+
+// Home Consult Form Submission tracking
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.querySelector('#home-consult-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            window.fullres ||= {events: []};
+						window.fullres.events.push({ key: 'formSubmission', formID: 'homeConsultForm', formName: 'Home Consult Form' });
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.querySelector('#contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            window.fullres ||= {events: []};
+						window.fullres.events.push({ key: 'formSubmission', formID: 'contactForm', formName: 'Contact Form' });
+        });
+    }
+});
