@@ -588,7 +588,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (event) => {
             window.fullres ||= {events: []};
-						window.fullres.events.push({ key: 'formSubmission', formID: 'homeConsultForm', formName: 'Home Consult Form' });
+						window.fullres.events.push({ key: 'homeFormSubmission', formID: 'homeConsultForm', formName: 'Home Consult Form' });
         });
     }
 });
@@ -598,7 +598,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (event) => {
             window.fullres ||= {events: []};
-						window.fullres.events.push({ key: 'formSubmission', formID: 'contactForm', formName: 'Contact Form' });
+						window.fullres.events.push({ key: 'contactFormSubmission', formID: 'contactForm', formName: 'Contact Form' });
         });
     }
 });
